@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--title-->
+      <title>Restaurant Ordering App</title>
+        <!--font awesome-->
+        <script src="https://kit.fontawesome.com/e94295be40.js" crossorigin="anonymous"></script>
+        <!--google fonts inter and smythe-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        
+    </head>
+    
+    
+    <body>
+        <div class="container">
+            <div class="hero">
+                  <h1>Jimmy's Diner</h1>
+                  <p class="p-hero">The best burgers and pizza in town.</p>
+            </div>  
+        
+        <main>
+            <div class="menu-section" id="menu-section">
+                <!--food info prints here!!-->
+            </div>
+            
+            <div class="cart" id="cart">
+                <div class="cart-title" id="cart-title">
+                   <h2 class="title">Your Order:</h2>
+                </div>
+                
+                <div class="cart-items" id="cart-items">
+                    <!--cart info prints here!!-->
+                </div> 
+            </div>
+            
+                <div class="total-price" id="total-price">
+                    <!--total info prints here!!-->
+                </div>
+        </main>
+            
+        <div id="form-modal" class="form-modal">
+             <h2>Enter Card Details</h2>
+                    <form id="payment-form">
+                        <input type="text" id="name" required pattern="^[A-Za-z\s'-]{2,}$" placeholder="Full Name"/>
+                        <input type="tel" pattern="^[0-9]{1,16}$" placeholder="Card Number" required />
+                        <input type="text" pattern="^[0-9]{1,3}$"placeholder="CVV" required />
+                        <button type="submit">Pay</button>
+                            <div class="close-modal-btn-container">
+				                <button type="button" class="modal-close-btn" id="modal-close-btn">X</button>
+			                </div>
+                    </form>
+        </div> 
+     
+            <div class="thank-you-msg" id="thank-you-msg">
+                <!--thank you message prints here!!-->   
+            </div>
+        
+        
+    <script src="index.js" type="module"></script> 
+    </body>
+</html>
